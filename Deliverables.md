@@ -1,7 +1,7 @@
 1. EC2 instance running and reachable over HTTP
-![ ![ec2 public](pictures/EC2PUBLICIPlist.png) ip access](file:///C:/Users/User/Pictures/Screenshots/ec2%20public%20ip%20access.png)
+![1.ec2 reachable](pictures/1.ec2%20reachable.png)
 2. RDS MySQL instance in the same VPC
-![Screenshot 2026-01-09 165458](file:///C:/Users/User/Pictures/Screenshots/Screenshot%202026-01-09%20165458.png)
+![Screenshot 2026-01-10 202944](pictures/Screenshot%202026-01-10%20202944.png)
 3.Security group rule showing:
 RDS inbound TCP 3306
 
