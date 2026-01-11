@@ -1,4 +1,5 @@
 1. EC2 instance running and reachable over HTTP
+
 ![1.ec2 reachable](pictures/1.ec2%20reachable.png)
 2. RDS MySQL instance in the same VPC
 ![Screenshot 2026-01-10 202944](pictures/Screenshot%202026-01-10%20202944.png)
@@ -6,7 +7,7 @@
 RDS inbound TCP 3306
 
 Source = EC2 security group (not 0.0.0.0/0)
-![Screenshot 2026-01-09 164116](file:///C:/Users/User/Pictures/Screenshots/Screenshot%202026-01-09%20164116.png)
+![Screenshot 2026-01-10 203218](pictures/Screenshot%202026-01-10%20203218.png)
 IAM role attached to EC2 allowing Secrets Manager access
 ![Screenshot 2026-01-10 190241](file:///C:/Users/User/Pictures/Screenshots/Screenshot%202026-01-10%20190241.png)
 ## Application Proof
@@ -16,7 +17,8 @@ IAM role attached to EC2 allowing Secrets Manager access
 4. Screenshot of:
 * RDS SG inbound rule using source = sg-ec2-lab
 * EC2 role attached
-![Screenshot 2026-01-09 165458](file:///C:/Users/User/Pictures/Screenshots/Screenshot%202026-01-09%20165458.png)
+http://<EC2_PUBLIC_IP>/init
+![initlabdb](pictures/initlabdb.png)
 * http://<EC2_PUBLIC_IP>/add?note=first_note
 * ![Screenshot 2026-01-10 201430](./pictures/Screenshot%202026-01-10%20201430.png)
 * http://<EC2_PUBLIC_IP>/add?note=last_note![Screenshot 2026-01-10 204025](./pictures/Screenshot%202026-01-10%20204025.png)
